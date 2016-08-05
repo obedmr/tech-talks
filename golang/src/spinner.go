@@ -4,13 +4,16 @@ import (
 	"time"
 )
 
+//start main OMIT
 func main() {
 	go spinner(100 * time.Millisecond)
         const n = 45
 	fibN := fib(n) // slow
 	fmt.Printf("\rFibonacci(%d) = %d\n", n, fibN)
 }
+//end main OMIT
 
+//start spinner OMIT
 func spinner(delay time.Duration) {
 	for {
 		for _, r := range `-\|/` {
@@ -19,6 +22,7 @@ func spinner(delay time.Duration) {
 		}
 	}
 }
+//end spinner OMIT
 
 func fib(x int) int {
 	if x < 2 {

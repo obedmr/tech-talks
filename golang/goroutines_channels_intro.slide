@@ -11,11 +11,8 @@ http://obedmr.com
 @_obedmr
 
 * Goroutines and Channels
-
 Concurrent programming is the expression of a program as a composition of several autonomous activities.
-
 Golang provides 2 styles of concurrent programming:
-
 - *CSP* - Communicating Sequential Processes
 - Shared Memory multithreading
 
@@ -24,4 +21,9 @@ In Go, each concurrently executing activity is called a _goroutine_.
 
 .link https://github.com/obedmr/tech-talks/blob/master/golang/src/spinner.go spinner.go
 
+.play src/spinner.go /start main/,/end main/
+
+.code src/spinner.go /start spinner/,/end spinner/
+
 * Channels
+.play src/hello.go /start main/,/end main/
