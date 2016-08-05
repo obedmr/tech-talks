@@ -4,11 +4,16 @@ Golang Tech Talks series
 Tags: golang, goroutine, channels
 
 Obed N Munoz
-Software Engineer, Intel Corporation
-obed.n.munoz@intel.com
+Software Engineer
+obed.n.munoz@gmail.com
 http://obedmr.com
 @_obedmr
- 
+
+
+* Based on:
+.link http://techbus.safaribooksonline.com/book/programming/go/9780134190570 The Go Programming Language Book
+
+
 * Goroutines and Channels
 
 Concurrent programming is the expression of a program as a composition of several autonomous activities.
@@ -17,23 +22,102 @@ Golang provides 2 styles of concurrent programming:
 
 - *CSP* - Communicating Sequential Processes
 - Shared Memory multithreading
- 
+
+
 * Goroutines
 
 In Go, each concurrently executing activity is called a _goroutine_.
 
-.link https://github.com/obedmr/tech-talks/blob/master/golang/src/spinner.go spinner.go
+When a program starts, its only goroutine is the one that calls the main function. It's called the _main_goroutine_.
+
+  f()       // call f(); wait for it to return
+  go f()    // create a new goroutine that calls f(); don't wait
+
  
-** Example - spinner (1/2)
+* Example 1 - spinner (1/2)
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/spinner.go spinner.go
  
 .play src/spinner.go /start main/,/end main/
 
 .code src/spinner.go /start fib/,/end fib/
- 
-** Example - spinner (2/2)
+
+
+* Example 1 - spinner (2/2)
 
 .code src/spinner.go /start spinner/,/end spinner/
 
+
+* Example 2 - Concurrent Clock Server (1/4)
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/clock1.go clock1.go
+
+.play src/clock1.go  /^func main/,/^}/
+
+* Example 2 - Concurrent Clock Server (2/4)
+
+.code src/clock1.go  /^func handleConn/,/^}/
+
+.play src/netcat.sh
+
+
+* Example 2 - Concurrent Clock Server (3/4)
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/netcat1.go netcat1.go
+
+.play src/netcat1.go /^func main/,/^}/
+
+.code src/netcat1.go /^func mustCopy/,/^}/
+
+
+* Example 2 - Concurrent Clock Server (4/4)
+
+This is the real *concurrent* one
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/clock2.go clock2.go
+
+.play src/clock2.go /^func main/,/^}/
+
+
 * Channels
 
-.play src/hello.go /start main/,/end main/
+If goroutines are the activities of a concurrent Go program, *channels* are the connections between them.
+
+- A *channel* is a communication mechanism that lets one goroutine send values to another goroutine.
+
+- A *channel* is a _reference_ to the data structure created by _make_
+
+- A *channel* has 2 operations, _send_ and _receive_, also known as _communications_.
+
+
+  ch := make(chan int) // ch has type 'chan int'
+
+  ch <- x  // a send statement
+
+  x = <-ch // a receive expression in an assignment statement
+  <-ch     // a receive statement; result is discarded
+
+  close(ch) // To close a channel
+
+* Unbuffered and Buffered Channels
+
+Channels created with simple _make_ is called as _unbuffered_channel_.
+
+But _make_ could use a second parameter which indicates the channel's _capacity_. If this _capacity_ is non-zero, _make_ will created a _buffered_ channel.
+
+  ch = make(chan int)    // unbuffered channel
+  ch = make(chan int, 0) // unbuffered channel
+  ch = make(chan int, 3) // buffered channel with capacity 3
+
+
+* More topics for second part
+
+- Buffered and Unbuffered channels
+- Pipelines
+- Unidirectional Channel types
+- Looping in Parallel
+- Cancellation
+- *Concurrency*with*Shared*Variables* (third part)
+
+_Take_a_look_in_the_book_
+.link http://techbus.safaribooksonline.com/book/programming/go/9780134190570 The Go Programming Language Book
