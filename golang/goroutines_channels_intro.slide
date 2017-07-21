@@ -1,6 +1,6 @@
 Goroutines and Channels Introduction
 Golang Tech Talks series
-5 Aug 2016
+21 Jul 2017
 Tags: golang, goroutine, channels
 
 Obed N Munoz
@@ -38,14 +38,14 @@ When a program starts, its only goroutine is the one that calls the main functio
 
 .link https://github.com/obedmr/tech-talks/blob/master/golang/src/spinner.go spinner.go
  
-.play src/spinner.go /start main/,/end main/
+.play src/spinner.go  /^func main/,/^}/
 
-.code src/spinner.go /start fib/,/end fib/
+.code src/spinner.go  /^func fib/,/^}/
 
 
 * Example 1 - spinner (2/2)
 
-.code src/spinner.go /start spinner/,/end spinner/
+.code src/spinner.go /^func spinner/,/^}/
 
 
 * Example 2 - Concurrent Clock Server (1/4)
@@ -109,6 +109,31 @@ But _make_ could use a second parameter which indicates the channel's _capacity_
   ch = make(chan int, 0) // unbuffered channel
   ch = make(chan int, 3) // buffered channel with capacity 3
 
+* Example 3 - Unbuffered Channels
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/netcat2.go netcat2.go
+ 
+.play src/netcat2.go  /^func main/,/^}/
+
+* Pipelines
+
+Pipelines are used to connect goroutines together so that the output of one can be the input to another.
+
+.image src/pipeline.png
+
+* Example 4 - Pipelines (1/2)
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/pipeline.go pipeline.go
+ 
+.play src/pipeline.go  /^func main/,/^}/
+
+* Example 4 - Pipelines (2/2)
+
+.link https://github.com/obedmr/tech-talks/blob/master/golang/src/pipeline.go pipeline.go
+ 
+.code src/pipeline.go  /^func counter/,/^}/
+ 
+.code src/pipeline.go  /^func squarer/,/^}/
 
 * More topics for second part
 
