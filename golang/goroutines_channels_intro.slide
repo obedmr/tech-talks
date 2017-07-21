@@ -79,6 +79,16 @@ This is the real *concurrent* one
 .play src/clock2.go /^func main/,/^}/
 
 
+* Let's philosophize
+
+.link https://go-proverbs.github.io/ Go Proverbs
+
+- Don't communicate by _sharing_ _memory_, _share_ _memory_ by communicating.
+
+- _Concurrency_ is not _parallelism_.
+
+- _Channels_ orchestrate; _mutexes_ serialize.
+
 * Channels
 
 If goroutines are the activities of a concurrent Go program, *channels* are the connections between them.
