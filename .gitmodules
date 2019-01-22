@@ -1,9 +1,9 @@
-[submodule "content/better-programming"]
-	path = content/better-programming
-	url = git@github.com:CodersSquad/better-programming.git
 [submodule "content/hello-gophers"]
 	path = content/hello-gophers
 	url = git@github.com:CodersSquad/hello-gophers.git
 [submodule "content/hello-c-world"]
 	path = content/hello-c-world
 	url = git@github.com:CodersSquad/hello-c-world.git
+[submodule "content/programming-art"]
+	path = content/programming-art
+	url = git@github.com:CodersSquad/programming-art.git
