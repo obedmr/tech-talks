@@ -7,3 +7,6 @@
 [submodule "content/programming-art"]
 	path = content/programming-art
 	url = git@github.com:CodersSquad/programming-art.git
+[submodule "content/dc-slides"]
+	path = content/dc-slides
+	url = https://github.com/CodersSquad/dc-slides.git
