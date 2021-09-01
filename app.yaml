@@ -1,5 +1,5 @@
 service: default
-runtime: go114
+runtime: go116
 
 handlers:
 - url: /favicon.ico
@@ -11,3 +11,5 @@ handlers:
   script: auto
 
 nobuild_files: content/
+
+main: ./
