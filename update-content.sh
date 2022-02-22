@@ -12,3 +12,6 @@ for proj in $projects; do
     mv -f $proj/public content/$proj
     rm -rf $proj
 done
+
+git add .
+git commit -s -m "Update on $(date)"
