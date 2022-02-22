@@ -3,7 +3,7 @@
 github_prefix=https://github.com/CodersSquad
 projects=(hello-gophers hello-c-world)
 
-for proj in $projects; do
+for proj in "${projects[@]}"; do
     git clone $github_prefix/$proj
     pushd $proj
     make
