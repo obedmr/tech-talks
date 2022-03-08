@@ -15,11 +15,11 @@
 </section>
 </foreignObject><foreignObject width="1280" height="720" data-marpit-advanced-background="pseudo"><section class="lead" style="" data-marpit-advanced-background="pseudo" data-marpit-pagination="1" data-marpit-pagination-total="16"></section></foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="2" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="2" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1><code>hello.c</code></h1>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> #include &lt;stdio.h&gt;
 
  main()
  {
- 	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello world \n&quot;</span>);
+ 	printf(&quot;Hello world \n&quot;);
  }
 </span></span></foreignObject></svg></code></pre>
 </section>
@@ -36,11 +36,11 @@ for the GNU operating system.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="4" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="4" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1><code>hello2.c</code></h1>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> <span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> #include &lt;stdio.h&gt;
 
- <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span>
- </span>{
- 	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Hello  %s\n&quot;</span>, argv[<span class="hljs-number">1</span>]);
+ int main(int argc, char **argv)
+ {
+ 	printf(&quot;Hello  %s\n&quot;, argv[1]);
  }
 
 </span></span></foreignObject></svg></code></pre>
@@ -59,20 +59,20 @@ for the GNU operating system.</p>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="6" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="6" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1>Check out  the <a href="src/00/fahrenheit_celsius.c"><code>fahrenheit_celsius.c</code></a></h1>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>#include &lt;stdio.h&gt;
 
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span>   LOWER  0       <span class="hljs-comment">/* lower limit of table */</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span>   UPPER  300     <span class="hljs-comment">/* upper limit */</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span>   STEP   20      <span class="hljs-comment">/* step size */</span></span>
+#define   LOWER  0       /* lower limit of table */
+#define   UPPER  300     /* upper limit */
+#define   STEP   20      /* step size */
 
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
-</span>{
-    <span class="hljs-keyword">int</span> fahr;
+int main()
+{
+    int fahr;
 
-    <span class="hljs-keyword">for</span> (fahr = LOWER; fahr &lt;= UPPER; fahr = fahr + STEP)
-	<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Fahrenheit: %3d, Celcius: %6.1f\n&quot;</span>, fahr, (<span class="hljs-number">5.0</span>/<span class="hljs-number">9.0</span>)*(fahr<span class="hljs-number">-32</span>));
+    for (fahr = LOWER; fahr &lt;= UPPER; fahr = fahr + STEP)
+	printf(&quot;Fahrenheit: %3d, Celcius: %6.1f\n&quot;, fahr, (5.0/9.0)*(fahr-32));
 
-    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    return 0;
 }
 </span></span></foreignObject></svg></code></pre>
 </section>
@@ -93,75 +93,75 @@ Fahrenheit: 30, Celsius: -1.11
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="8" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="8" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1>Simple Input and Output</h1>
 <p>Link to source code: <a href="src/00/word_counter.c"><code>word_counter.c</code></a></p>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>#include &lt;stdio.h&gt;
 
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> IN   1   <span class="hljs-comment">/* inside a word */</span></span>
-<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> OUT  0   <span class="hljs-comment">/* outside a word */</span></span>
+#define IN   1   /* inside a word */
+#define OUT  0   /* outside a word */
 
-<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+int main()
 
-</span>{
-    <span class="hljs-keyword">int</span> c, nl, nw, nc, state;
+{
+    int c, nl, nw, nc, state;
     state = OUT;
 
-    nl = nw = nc = <span class="hljs-number">0</span>;
+    nl = nw = nc = 0;
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="9" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="9" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">while</span> ((c = getchar()) != EOF) {
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>while ((c = getchar()) != EOF) {
 	++nc;
-	<span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27;\n&#x27;</span>)
+	if (c == '\n')
 	    ++nl;
 
-	<span class="hljs-keyword">if</span> (c == <span class="hljs-string">&#x27; &#x27;</span> || c == <span class="hljs-string">&#x27;\n&#x27;</span> || c == <span class="hljs-string">&#x27;\t&#x27;</span>)
+	if (c == ' ' || c == '\n' || c == '\t')
 	    state = OUT;
-	<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (state == OUT) {
+	else if (state == OUT) {
 	    state = IN;
 	    ++nw;
 	}
     }
 
-    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;Lines: %d,  Words: %d, Chars: %d\n&quot;</span>, nl, nw, nc);
-    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+    printf(&quot;Lines: %d,  Words: %d, Chars: %d\n&quot;, nl, nw, nc);
+    return 0;
 }
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="10" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="10" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1>Arrays - fixed size - <a href="src/00/reverse.c">reverse.c</a></h1>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> <span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> ARRAY_LENGHT 10</span>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> #define ARRAY_LENGHT 10
 
- <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-     <span class="hljs-keyword">int</span> i, tmp, arr[ARRAY_LENGHT];
-     srand(time(<span class="hljs-literal">NULL</span>));
+ int main() {
+     int i, tmp, arr[ARRAY_LENGHT];
+     srand(time(NULL));
 
-     <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>;  i &lt; ARRAY_LENGHT; i++) {
-         arr[i] = rand() % <span class="hljs-number">100</span>;
+     for (i = 0;  i &lt; ARRAY_LENGHT; i++) {
+         arr[i] = rand() % 100;
      }
 
-     <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>;  i &lt; ARRAY_LENGHT/<span class="hljs-number">2</span>; i++) {
+     for (i = 0;  i &lt; ARRAY_LENGHT/2; i++) {
          tmp = arr[i];
-         arr[i] = arr[ARRAY_LENGHT - i - <span class="hljs-number">1</span>];
-         arr[ARRAY_LENGHT - i - <span class="hljs-number">1</span>] = tmp;
+         arr[i] = arr[ARRAY_LENGHT - i - 1];
+         arr[ARRAY_LENGHT - i - 1] = tmp;
      }
  }
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="11" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="11" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1>Arrays - as argument - <a href="src/00/reverse2.c">reverse2.c</a></h1>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">reverse</span><span class="hljs-params">(<span class="hljs-keyword">int</span> arr[ARRAY_LENGHT])</span> </span>{
-     <span class="hljs-keyword">int</span> i, tmp;
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> void reverse(int arr[ARRAY_LENGHT]) {
+     int i, tmp;
 
-     <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>;  i &lt; ARRAY_LENGHT/<span class="hljs-number">2</span>; i++) {
+     for (i = 0;  i &lt; ARRAY_LENGHT/2; i++) {
          tmp = arr[i];
-         arr[i] = arr[ARRAY_LENGHT - i - <span class="hljs-number">1</span>];
-         arr[ARRAY_LENGHT - i - <span class="hljs-number">1</span>] = tmp;
+         arr[i] = arr[ARRAY_LENGHT - i - 1];
+         arr[ARRAY_LENGHT - i - 1] = tmp;
      }
  }
 
- <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
-     <span class="hljs-comment">// initialization</span>
+ int main() {
+     // initialization
      reverse(arr);
-     <span class="hljs-comment">// print results</span>
+     // print results
  }
 </span></span></foreignObject></svg></code></pre>
 </section>
@@ -173,22 +173,22 @@ Fahrenheit: 30, Celsius: -1.11
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="13" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="13" data-marpit-pagination-total="16" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
 <h1>Arrays - dynamic size - <a href="src/00/reverse3.c">reverse3.c</a></h1>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">reverse</span><span class="hljs-params">(<span class="hljs-keyword">int</span> lenght, <span class="hljs-keyword">int</span> arr[])</span> </span>{
-     <span class="hljs-keyword">int</span> i, tmp;
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap> void reverse(int lenght, int arr[]) {
+     int i, tmp;
 
-     <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>;  i &lt; lenght/<span class="hljs-number">2</span>; i++) {
+     for (i = 0;  i &lt; lenght/2; i++) {
          tmp = arr[i];
-         arr[i] = arr[lenght - i - <span class="hljs-number">1</span>];
-         arr[lenght - i - <span class="hljs-number">1</span>] = tmp;
+         arr[i] = arr[lenght - i - 1];
+         arr[lenght - i - 1] = tmp;
      }
  }
 
- <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span> </span>{
-     <span class="hljs-keyword">int</span> i, lenght, *arr;
-     arr = <span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>) * lenght);
-     <span class="hljs-comment">// initialization</span>
+ int main(int argc, char **argv) {
+     int i, lenght, *arr;
+     arr = malloc(sizeof(int) * lenght);
+     // initialization
      reverse(lenght, arr);
-     <span class="hljs-comment">// print results</span>
+     // print results
  }
 
 

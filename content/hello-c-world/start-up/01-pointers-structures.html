@@ -17,12 +17,12 @@
 <h1>Pointer</h1>
 <p>A pointer is a variable that contains the address of a variable.</p>
 <p><img src="images/pointer.png" alt="pointer image" /></p>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-keyword">int</span> x = <span class="hljs-number">1</span>, y = <span class="hljs-number">2</span>, z[<span class="hljs-number">10</span>];
-<span class="hljs-keyword">int</span> *ip;         <span class="hljs-comment">/* ip is a pointer to int */</span>
-ip = &amp;x;         <span class="hljs-comment">/* ip now points to x */</span>
-y = *ip;         <span class="hljs-comment">/* y is now 1 */</span>
-*ip = <span class="hljs-number">0</span>;         <span class="hljs-comment">/* x is now 0 */</span>
-ip = &amp;z[<span class="hljs-number">0</span>];      <span class="hljs-comment">/* ip now points to z[0] */</span>
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>int x = 1, y = 2, z[10];
+int *ip;         /* ip is a pointer to int */
+ip = &amp;x;         /* ip now points to x */
+y = *ip;         /* y is now 1 */
+*ip = 0;         /* x is now 0 */
+ip = &amp;z[0];      /* ip now points to z[0] */
 </span></span></foreignObject></svg></code></pre>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="3" data-paginate="true" data-background-color="#fff" data-background-image="url('https://marp.app/assets/hero-background.svg')" data-theme="gaia" data-marpit-pagination="3" data-marpit-pagination-total="18" style="--paginate:true;--background-color:#fff;--background-image:url('https://marp.app/assets/hero-background.svg');--theme:gaia;background-color:#fff;background-image:url('https://marp.app/assets/hero-background.svg');background-position:center;background-repeat:no-repeat;background-size:cover;">
@@ -30,9 +30,9 @@ ip = &amp;z[<span class="hljs-number">0</span>];      <span class="hljs-comment"
 <ul>
 <li>Arguments by value</li>
 </ul>
-<pre><code class="language-c"><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span>
-</span>{
-   <span class="hljs-keyword">int</span> temp;
+<pre><code><svg data-marp-fitting="svg" data-marp-fitting-code><foreignObject><span data-marp-fitting-svg-content><span data-marp-fitting-svg-content-wrap>void swap(int x, int y)
+{
+   int temp;
    temp = x;
    x = y;
    y = temp;
