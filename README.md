@@ -12,3 +12,5 @@
   - [Pointers and Structures](./content/hello-c-world/start-up/01-pointers-structures.html)
   - [Memory Management](./content/hello-c-world/start-up/02-memory-mgmt.html)
   - [Linking](./content/hello-c-world/start-up/03-linking.html)
+- Operating System
+  - [Operating System Architecture](content/hello-c-world/os/04-os-intro.md)
