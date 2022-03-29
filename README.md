@@ -14,3 +14,5 @@
   - [Linking](./content/hello-c-world/start-up/03-linking.html)
 - Operating System
   - [Operating System Architecture](content/hello-c-world/os/04-os-intro.html)
+- Processes
+  - [Processes Management](content/hello-c-world/processes/05-processes.html)
