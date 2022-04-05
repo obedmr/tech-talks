@@ -16,3 +16,4 @@
   - [Operating System Architecture](content/hello-c-world/os/04-os-intro.html)
 - Processes
   - [Processes Management](content/hello-c-world/processes/05-processes.html)
+  - [Events and Signals](content/hello-c-world/events-signals/06-events-signals.html)
