@@ -17,3 +17,5 @@
 - Processes
   - [Processes Management](content/hello-c-world/processes/05-processes.html)
   - [Events and Signals](content/hello-c-world/events-signals/06-events-signals.html)
+- Concurrent Programming
+  - [Concurrent Programming Introduction](content/hello-c-world/concurrent/07-concurrent-programming.html)
