@@ -4,6 +4,9 @@
 
 - Start Up
   - [Hello Gophers](./content/hello-gophers/start-up/hello-gophers.html)
+- Concurrent Go
+  - [Goroutines and Channels](./content/hello-gophers/goroutines/goroutines_channels_intro.html)
+
 
 ## Hello C World
 
