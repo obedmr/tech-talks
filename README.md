@@ -1,4 +1,4 @@
-# Tech Talks Project
+# Learn by doing, learn by teaching
 
 ## Hello Gophers
 
