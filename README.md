@@ -1,4 +1,4 @@
-# Learn by doing, learn by teaching
+# Obed's Tech Talks - Learn by doing, learn by sharing
 
 ## Hello Gophers
 
