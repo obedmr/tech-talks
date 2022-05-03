@@ -7,6 +7,7 @@
 - Concurrent Go
   - [Goroutines and Channels](./content/hello-gophers/goroutines/goroutines_channels_intro.html)
   - [More about Goroutines and Channels](./content/hello-gophers/goroutines/goroutines_channels_part2.html)
+  - [Shared Variables in Go](./content/hello-gophers/goroutines/goroutines_shared_variables.html)
 
 
 ## Hello C World
