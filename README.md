@@ -24,3 +24,8 @@
   - [Events and Signals](content/hello-c-world/events-signals/06-events-signals.html)
 - Concurrent Programming
   - [Concurrent Programming Introduction](content/hello-c-world/concurrent/07-concurrent-programming.html)
+
+
+## Computer Graphics
+
+- [Introduction to Graphics Libraries](content/computer-graphics/graphics-libs/graphics-libs.html)
