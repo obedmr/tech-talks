@@ -31,3 +31,4 @@
 - [Introduction to Graphics Libraries](content/computer-graphics/graphics-libs/graphics-libs.html)
 - Math Fundamentals for Graphics
   - [Transformations](content/computer-graphics/math-fundamentals/transformations.html)
+  - [Curves](content/computer-graphics/math-fundamentals/curves.html)
