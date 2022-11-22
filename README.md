@@ -32,3 +32,5 @@
 - Math Fundamentals for Graphics
   - [Transformations](content/computer-graphics/math-fundamentals/transformations.html)
   - [Curves](content/computer-graphics/math-fundamentals/curves.html)
+- Simulation and Drawing process
+  - [Animation](content/computer-graphics/simulation-drawing/animation.html)
