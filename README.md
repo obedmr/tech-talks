@@ -34,3 +34,7 @@
   - [Curves](content/computer-graphics/math-fundamentals/curves.html)
 - Simulation and Drawing process
   - [Animation](content/computer-graphics/simulation-drawing/animation.html)
+
+## Data Structures
+
+- [Data Abstraction](content/data-structures/data-abstraction/data-abstraction.html)
