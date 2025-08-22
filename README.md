@@ -38,4 +38,4 @@
 ## Data Structures
 
 - [Data Abstraction](content/data-structures/data-abstraction/data-abstraction.html)
-- [Recursion](content/data-structures/data-abstraction/recursion.html)
+- [Recursion](content/data-structures/recursion/recursion.html)
