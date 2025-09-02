@@ -1,7 +1,7 @@
 #!/bin/bash
 
 github_prefix=https://github.com/CodersSquad
-projects=(hello-gophers hello-c-world computer-graphics data-structures)
+projects=(hello-gophers hello-c-world computer-graphics data-structures principles-and-values)
 
 for proj in "${projects[@]}"; do
     git clone $github_prefix/$proj

@@ -1,5 +1,7 @@
 # Obed's Tech Talks - Learn by doing, learn by sharing
 
+## [Principles and Values](./content/principles-and-values/principles-and-values.html)
+
 ## Hello Gophers
 
 - Start Up
