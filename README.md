@@ -42,3 +42,4 @@
 - [Data Abstraction](content/data-structures/data-abstraction/data-abstraction.html)
 - [Recursion](content/data-structures/recursion/recursion.html)
 - [Complexity Analysis](content/data-structures/complexity-analysis/complexity-analysis.html)
+- [Search Algorithms](content/data-structures/search/search.html)
