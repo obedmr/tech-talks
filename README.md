@@ -43,3 +43,4 @@
 - [Recursion](content/data-structures/recursion/recursion.html)
 - [Complexity Analysis](content/data-structures/complexity-analysis/complexity-analysis.html)
 - [Search Algorithms](content/data-structures/search/search.html)
+- [Sorting Algorithms](content/data-structures/sorting/sorting.html)
