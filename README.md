@@ -44,3 +44,4 @@
 - [Complexity Analysis](content/data-structures/complexity-analysis/complexity-analysis.html)
 - [Search Algorithms](content/data-structures/search/search.html)
 - [Sorting Algorithms](content/data-structures/sorting/sorting.html)
+- [10 things about memory management in C++](content/data-structures/memory/10-things.html)
