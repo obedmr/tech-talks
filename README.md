@@ -46,3 +46,4 @@
 - [Sorting Algorithms](content/data-structures/sorting/sorting.html)
 - [10 things about memory management in C++](content/data-structures/memory/10-things.html)
 - [Binary Trees](content/data-structures/non-linear-structures/binary-trees.html)
+- [Heaps](content/data-structures/non-linear-structures/heaps.html)
